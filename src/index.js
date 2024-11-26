@@ -3,8 +3,8 @@ const https = require("https");
 const cors = require("cors");
 
 const app = express();
-const port = 3002;
-const port2 = 3003;
+const port = 3000;
+const port2 = 3001;
 
 const fs = require("fs");
 var options = {
@@ -15,6 +15,7 @@ var options = {
 app.use(cors());
 
 app.get("/", (req, res) => {
+  console.log('arriving here...!');
   res.send("Hello this is node..!");
 });
 
